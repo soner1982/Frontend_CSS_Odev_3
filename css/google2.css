@@ -1,0 +1,207 @@
+/* Sayfanın en üstüne eklenen header div'i içerisine gmail (.mail, görseller (.img), uygulamalar (.apps) ve 
+oturum açma butonu (.signin) dahil edildi.*/
+.header {
+    display: flex;
+    justify-content: flex-end;    
+}
+/*************************************gmail******************************/
+.mail {    
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    color: rgba(0,0,0,.87);
+    text-decoration: none;
+    display: inline-block;
+    padding-top: 15px;    
+} 
+/*************************************görseller******************************/ 
+.img {
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    color: rgba(0,0,0,.87);
+    text-decoration: none;
+    display: inline-block;
+    padding-top: 15px;
+    margin-right: 20px;
+    margin-left: 13px;
+}
+/*************************************google uygulamaları******************************/
+.apps {
+    color: #000;
+    padding-top: 5px; 
+    margin-right: 20px;    
+    display: inline-block;           
+    box-sizing: border-box;
+    height: 30px;
+    width: 30px;
+}
+/*************************************Oturum aç butonu******************************/
+.signin {
+    font-family: Google Sans,Roboto,Helvetica,Arial,sans-serif;
+    display: inline-block;
+    text-align: center;
+    padding: 9px 15px;
+    border-radius: 4px;
+    background-color: #2b7de9; 
+    color: #fff;
+    display: inline-block; 
+    font-size: 14px; 
+    text-decoration: none;
+    width: 100px;
+    margin-right: 10px; 
+    margin-top: 5px;  
+}
+/*************************************google resim/logo, farklı div******************************/
+.logo {
+    display: inline-block;
+    background-color: #fff;
+    margin-top: 55px;
+    margin-left: 500px;
+    margin-bottom: 20px;
+    float:none;    
+    height: auto;
+    width: auto;    
+    font-size: 14px;
+    font-family: arial,sans-serif;
+    color: #202124;        
+}
+/*************************************google search bar******************************/
+.search {
+    display: flex;
+    outline: none;
+    height: 44px;
+    background: #fff;
+    border: 1px solid #dfe1e5;
+    box-shadow: none;
+    border-radius: 24px;
+    margin: 0 auto;
+    width: 480px;
+    max-width: 584px;
+}
+.search:hover {
+    background-color: #fff;
+    box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+    border-color: rgba(223,225,229,0);
+}
+/*************************************search bar sesli arama logo, link geçersiz******************************/
+.mic {
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    left: 890px;
+    top: 230px;
+}
+/*************************************search bar büyüteç resmi******************************/
+.lens {
+    width: 20px;
+    height: 20px;
+    position: fixed;
+    left: 360px;
+    top: 235px;
+}
+/*googleda ara ve şanslı hissediyorum butonları. #ara "Google'da Ara ve #sansli "Kendimi şanslı 
+hissediyorum butonları***************************************************************************************************/
+.aramalar {
+    display: flex;   
+    float: left;    
+    margin-top: 20px;
+    margin-left: 440px;
+}
+#ara {
+    background-color: #f8f9fa;
+    border: 1px solid #f2f2f2;
+    border-radius: 4px;
+    color: #5f6368;
+    font-family: arial,sans-serif;
+    font-size: 14px;    
+    margin: 11px 4px;
+    padding: 0 16px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;       
+}
+#sansli {
+    background-color: #f8f9fa;
+    border: 1px solid #f2f2f2;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;    
+}
+button#ara:hover {
+    background-color: #fff;
+    box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+    border-color: rgba(223,225,229,0);
+}
+button#sansli:hover {
+    background-color: #fff;
+    box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+    border-color: rgba(223,225,229,0);
+}
+/*************************************Türkiye yazısı*****************************/
+.ulke {
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    padding-top: 7px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    border-bottom: 1px solid #dadce0;
+    color: #3c4043;
+    background:white;
+    position: fixed;
+    right: 0px;
+    left: 0px;
+    bottom: 40px;
+    background: #f2f2f2;
+    
+}
+/***footer, .ilk (#hakkinda, #reklam, #işletme ve #nasil), .notr ve .son (#gizli, #sart, #ayar)' u içerir****/
+.footer {
+    display: flex;   
+    height: 30px;
+    padding-top: 10px;
+    padding-left: 30px;
+    justify-content: space-between;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    background: #f2f2f2;
+    margin-top: 300px;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right:0px      
+}
+a {
+    text-decoration: none;
+    color: #3c4043;
+}
+/* hakkında, reklam, işletme ve arama nasıl çalışır */
+.ilk {
+    word-spacing: 20px;    
+}
+#nasil {
+    word-spacing: normal;
+}
+/* karbon nötr yazısı ve yeşil yaprak logo */
+.flower {
+    margin-right: 4px;   
+    width: 15px;
+    height: 15px;
+}
+.notr {
+    margin-left: 100px;
+    margin-bottom: 80px;
+}
+/* gizlilik, şartlar ve ayarlar */
+.son {
+    margin-left: 260px;
+    margin-right: 10px;
+    word-spacing: 20px;
+}
+/******neredeyse 4 günümü aldı. Geliştiriciydi teşekkürler*********/
